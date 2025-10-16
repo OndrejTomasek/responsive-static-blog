@@ -1,3 +1,6 @@
+# Responsive static blog page
+This is a project asigned by Scrimba as a part of the Frontend Career Path.
+
 # Getting Started
 Install the dependencies and run the project
 ```
