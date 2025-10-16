@@ -207,7 +207,7 @@ article p {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 780px) {
     .container {
         margin: 0 5rem
     }
@@ -222,6 +222,9 @@ article p {
     }
     .main-content, .recent-posts {
         margin: 2rem 2.4rem
+    }
+    .hero {
+        height: 60vh;
     }
     
     .about-hero {
@@ -247,5 +250,11 @@ article p {
     }
     .blog-page-date {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .blog-posts-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
