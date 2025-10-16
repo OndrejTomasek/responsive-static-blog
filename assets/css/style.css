@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.brand {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #0E0E0E;
+}
+
+.brand img{
+    margin-right: 0.3rem;
+}
+
+.uppercase-link {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #090909;
+    font-weight: 500;
+}
+
+.uppercase-link:hover,
+.uppercase-link:focus {
+    text-decoration: underline;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+/* HERO */
+
+.hero {
+    background: url('/images/article-image-hero.png');
+    color: #fff;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 48vh;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    width: 80%;
+}
+
+.hero-date {
+    font-size: 2vh;
+}
+
+.hero-title  {
+    font-size: 5vh;
+    margin: 0.3rem 0;
+}
+
+.hero-p {
+    font-size: 2.5vh;
+    line-height: 1.4;
+}
+
+.about-hero {
+    margin-bottom: 3rem;
+}
+
+.about-hero-avatar {
+    width: 50%;
+}
+
+.about-hero-title {
+    margin-bottom: 1.2rem;
+    width: 85%;
+}
+
+article p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #151515;
+}
+
+.main-content, .recent-posts {
+    margin: 2rem 1rem;
+    margin-bottom: 3rem;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 2.4rem;
+}
+
+.blog-post-img {
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+}
+
+
+.blog-page-date {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.blog-post-name {
+    line-height: 0.7;
+    font-size: 1.375rem;
+}
+
+.blog-post-description {
+    margin: 0;
+}
+
+.recent-posts-title {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.4rem;
+}
+
+.view-more-btn {
+    border: none;
+    text-decoration: underline;
+    background-color: #fff;
+    margin: 0 auto;
+    display: block;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.view-more-btn:hover {
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    color: #fff;
+    background-color: #202020;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.footer-company {
+    color: #ECECEC;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+}
+
+.footer-copyright {
+    color: #D7D7D7;
+    letter-spacing: 0.03em;
+}
+
+
+.blog-page-title {
+    font-size: 2rem;
+}
+
+.article-title {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.blog-page-img {
+    width: 100%;
+    margin: 2.5rem 0;
+    border-radius: 4px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 720px) {
+    .container {
+        margin: 0 5rem
+    }
+    .blog-posts-list, .recent-posts-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.4rem
+    }
+    
+    .blog-post {
+        margin-bottom: 1rem;
+    }
+    .main-content, .recent-posts {
+        margin: 2rem 2.4rem
+    }
+    
+    .about-hero {
+        display: flex;
+        align-items: center;
+        gap: 3rem
+    }
+    
+    .about-hero-avatar {
+        width: 20%;
+    }
+    .brand {
+        font-size: 1.25rem;
+    }
+    .brand img {
+        width: 2.1rem;
+    }
+    .uppercase-link {
+        font-size: 1rem;
+    }
+    .recent-posts-title {
+        font-size: 1.375rem;
+    }
+    .blog-page-date {
+        font-size: 1rem;
+    }
+}
